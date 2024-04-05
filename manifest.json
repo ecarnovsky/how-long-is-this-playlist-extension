@@ -1,0 +1,15 @@
+{
+    "name": "YouTube Counter",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "This extension tells you how much time it will take to watch an entire playlist.",
+    "icons":  {
+        "16": "icons/clock-image.png",
+        "32": "icons/clock-image.png",
+        "48": "icons/clock-image.png",
+        "128": "icons/clock-image.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+}
