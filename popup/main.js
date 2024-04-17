@@ -14,7 +14,7 @@ async function start(){
         
         document.querySelector('main').innerHTML = 
         `<div>
-            <span class="color-background error-color-background">
+            <span class="color-background">
                 No playlist detected
             </span>
         </div`
@@ -50,7 +50,7 @@ async function start(){
             <span>
                 Total Time:
             </span>
-            <span class="normal-color-background color-background">
+            <span class="color-background">
                 ${playlistTime.getTimeString()}
             </span>
         </div>

@@ -38,19 +38,11 @@ main > div > span:last-child {
 .color-background {
     border-radius: 7px;
     color: white;
-}
-
-.normal-color-background {
-    background: radial-gradient(rgb(255, 24, 24), rgb(252, 28, 28));
-    border: 1px rgb(146, 15, 15) solid;
+    background: radial-gradient(rgba(255, 24, 24, .85), rgba(252, 28, 28, .85));
+    border: none;
     text-shadow: 1px 1px 1px black;
 }
 
-.error-color-background{
-    background: radial-gradient(rgba(112, 112, 112, .8), rgba(107, 107, 107, .8));
-    border: rgb(153, 153, 153) solid 1px;
-    text-shadow: none;
-}
 
 main > div:last-child {
     padding-bottom: 30px;
