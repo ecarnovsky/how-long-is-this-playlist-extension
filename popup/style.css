@@ -7,7 +7,7 @@ body {
     width: 270px;
     min-height: 240px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     font-family: sans-serif;
 }
@@ -22,6 +22,13 @@ h1 {
 main > div {
     padding-bottom: 20px;
 }
+
+main > div > span {
+    display: block;
+    padding-bottom: 13px;
+    
+}
+
 main > div:last-child {
     padding-bottom: 30px;
 }

@@ -42,10 +42,8 @@ async function start(){
         }
     })
 
-    console.log(totalVideoSeconds)
 
     let playlistTime = new PlaylistTime(totalVideoSeconds)
-    let playlistTimeInfo = playlistTime.getDetailedTimeInfo()
 
     document.querySelector('main').innerHTML = 
         `<div>
@@ -53,15 +51,7 @@ async function start(){
                 Total Time:
             </span>
             <span>
-                ${playlistTime.getEstimatedHours()} hours
-            </span>
-        </div>
-        <div>
-            <span>
-                That is exactly
-            </span>
-            <span>
-                ${playlistTimeInfo._days} days, ${playlistTimeInfo._hours} hours, ${playlistTimeInfo._minutes} minutes, and ${playlistTimeInfo._seconds} seconds
+                ${playlistTime.getTimeString()}
             </span>
         </div>
         `
