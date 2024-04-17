@@ -1,2 +1,2 @@
 # How Long is This Playlist?
-This is a Chrome extension I'm making to calculate the total length of time it will take to get through a playlist. 
+This browser extension allows you to see the total time it will take you to get through a YouTube playlist. It works on Edge, Chrome, and Firefox.
