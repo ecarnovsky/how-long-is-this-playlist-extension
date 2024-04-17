@@ -4,11 +4,12 @@ html {
 }
 
 body {
-    min-width: 270px;
+    width: 270px;
     min-height: 240px;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
+    font-family: sans-serif;
 }
 
 h1 {
