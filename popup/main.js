@@ -30,6 +30,13 @@ async function start(){
     })
 
     console.log("Total seconds: " + totalVideoSeconds)
+
+    let playlistTime = new PlaylistTime(totalVideoSeconds)
+
+    console.log(playlistTime.getEstimatedHours())
+
+    let playlistTimeInfo = playlistTime.getDetailedTimeInfo()
+    console.log(`The playlist will take ${playlistTimeInfo._days} days`)
     
 }
 

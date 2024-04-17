@@ -1,5 +1,5 @@
 {
-    "name": "YouTube Counter",
+    "name": "How Long is This Playlist?",
     "version": "0.0.0.1",
     "manifest_version": 3,
     "description": "This extension tells you how much time it will take to watch an entire playlist.",
