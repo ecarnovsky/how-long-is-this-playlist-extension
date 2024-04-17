@@ -9,6 +9,18 @@ async function start(){
     let doc = parser.parseFromString(bodyHTML, "text/html")
     let videos = doc.querySelectorAll('ytd-playlist-panel-video-renderer')
 
+    if(videos.length === 0){
+        
+        document.querySelector('main').innerHTML = 
+        `<div>
+            <span>
+                No playlist detected
+            </span>
+        </div`
+
+        return
+    }
+
 
    let totalVideoSeconds = 0
 
