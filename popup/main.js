@@ -29,14 +29,29 @@ async function start(){
         }
     })
 
-    console.log("Total seconds: " + totalVideoSeconds)
 
     let playlistTime = new PlaylistTime(totalVideoSeconds)
-
-    console.log(playlistTime.getEstimatedHours())
-
     let playlistTimeInfo = playlistTime.getDetailedTimeInfo()
-    console.log(`The playlist will take ${playlistTimeInfo._days} days`)
+
+    document.querySelector('main').innerHTML = 
+        `<div>
+            <span>
+                Total Time:
+            </span>
+            <span>
+                ${playlistTime.getEstimatedHours()} hours
+            </span>
+        </div>
+        <div>
+            <span>
+                That is exactly
+            </span>
+            <span>
+                ${playlistTimeInfo._days} days, ${playlistTimeInfo._hours} hours, ${playlistTimeInfo._minutes} minutes, and ${playlistTimeInfo._seconds} seconds
+            </span>
+        </div>
+        `
+    
     
 }
 
