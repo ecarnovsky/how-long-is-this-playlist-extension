@@ -3,6 +3,7 @@ window.onload = start
 
 async function start(){
 
+
     let bodyHTML = await getBodyHTML()
 
     let parser = new DOMParser()

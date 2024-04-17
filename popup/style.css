@@ -26,3 +26,12 @@ main > div:last-child {
     padding-bottom: 30px;
 }
 
+
+@media (prefers-color-scheme: dark) {  
+    body{  
+       background: rgb(39, 41, 40);    
+       color: rgba(255, 255, 255, .9);
+       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);;
+    }
+  }
+
