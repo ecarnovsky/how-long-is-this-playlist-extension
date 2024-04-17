@@ -41,6 +41,7 @@ async function start(){
         }
     })
 
+    console.log(totalVideoSeconds)
 
     let playlistTime = new PlaylistTime(totalVideoSeconds)
     let playlistTimeInfo = playlistTime.getDetailedTimeInfo()
