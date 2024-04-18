@@ -2,3 +2,5 @@
 This browser extension allows you to see the total time it will take you to get through a YouTube playlist. It works on Edge, Chrome, and Firefox.
 
 ![A screenshot of the extension](https://github.com/ecarnovsky/ecarnovsky/blob/main/images/playlist-extension.png)
+
+![A screenshot of the extension in light mode](https://github.com/ecarnovsky/ecarnovsky/blob/main/images/playlist-extension-light-mode.png)
