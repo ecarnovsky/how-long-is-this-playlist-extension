@@ -1,8 +1,7 @@
 
-window.onload = start
+getVideos(0, 3)
 
-async function start(){
-
+async function getVideos(count, limit){
 
     let bodyHTML = await getBodyHTML()
 
@@ -10,17 +9,30 @@ async function start(){
     let doc = parser.parseFromString(bodyHTML, "text/html")
     let videos = doc.querySelectorAll('ytd-playlist-panel-video-renderer')
 
-    if(videos.length === 0){
+    if(videos.length >= 1 && videos[videos.length - 1].querySelector('ytd-thumbnail-overlay-time-status-renderer') !== null && videos[videos.length - 1].querySelector('ytd-thumbnail-overlay-time-status-renderer').innerText !== null ){
+        document.querySelector('.loader').remove()
+        main(videos)
+    } else {
+        count === 0 ? document.querySelector('body').innerHTML += `<div class="loader"></div>` : null
+        if ( count <= limit){
+            await setTimeout(() => getVideos(count + 1, limit), 1000)
+        } else {
         
-        document.querySelector('main').innerHTML = 
-        `<div>
-            <span class="color-background">
-                No playlist detected
-            </span>
-        </div`
+            document.querySelector('.loader').remove()
+            document.querySelector('main').innerHTML = 
+            `<div>
+                <span class="color-background">
+                    No playlist detected
+                </span>
+            </div`
 
-        return
+            return 
+        }
     }
+}
+
+
+async function main(videos){
 
 
    let totalVideoSeconds = 0
@@ -77,3 +89,5 @@ function getBodyHTML(){
         console.log('And error has occurred: ' + error.message)
     })
 }
+
+
