@@ -2,6 +2,11 @@
     "name": "How Long is This Playlist?",
     "version": "0.0.0.1",
     "manifest_version": 3,
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "8785434567894@9876545678900987654567033"
+        }
+    },      
     "description": "This extension tells you how much time it will take to watch an entire playlist.",
     "icons":  {
         "16": "icons/clock-image.png",

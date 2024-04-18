@@ -75,17 +75,20 @@ async function main(videos){
 
     let playlistTime = new PlaylistTime(totalVideoSeconds)
 
-    document.querySelector('main').innerHTML = 
-        `<div>
-            <span>
-                Total Time:
-            </span>
-            <span class="color-background">
-                ${playlistTime.getTimeString()}
-            </span>
-        </div>
-        `
+
+    let newDiv = document.createElement("div")
+
+    let newSpan = document.createElement("span")
+    newSpan.appendChild(document.createTextNode("Total Time:"))
+    newDiv.appendChild(newSpan)
+
+    newSpan = document.createElement("span")
+    newSpan.classList.add('color-background')
+    newSpan.appendChild(document.createTextNode(`${playlistTime.getTimeString()}`))
+    newDiv.appendChild(newSpan)
     
+
+    document.querySelector('main').appendChild(newDiv)
     
 }
 
