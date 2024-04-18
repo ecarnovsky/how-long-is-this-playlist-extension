@@ -3,9 +3,9 @@ getVideos(0, 3)
 
 /**
  * This is a recursive function. It takes in a counter and the limit it counts to. 
- * If it cannot parse the page and find a playlist, it will wait 1 second, them call
+ * If it cannot parse the page and find a playlist, it will wait 1 second, then call
  * itself again, increasing the count by one. If the limit is 
- * reached as no playlist is found, a error message is displayed to the
+ * reached and no playlist is found, a error message is displayed to the
  * user.
  * @param {Number} count - starts at 0
  * @param {Number} limit - if count goes over this number, the function will stop calling itself
