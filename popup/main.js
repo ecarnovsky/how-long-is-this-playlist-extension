@@ -19,7 +19,9 @@ async function getVideos(count, limit){
     let videos = doc.querySelectorAll('ytd-playlist-panel-video-renderer')
 
     if(videos.length >= 1 && videos[videos.length - 1].querySelector('ytd-thumbnail-overlay-time-status-renderer') !== null && videos[videos.length - 1].querySelector('ytd-thumbnail-overlay-time-status-renderer').innerText !== null ){
-        document.querySelector('.loader').remove()
+        if(count > 0){
+            document.querySelector('.loader').remove()
+        }
         main(videos)
     } else {
         count === 0 ? document.querySelector('body').innerHTML += `<div class="loader"></div>` : null
