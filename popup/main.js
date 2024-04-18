@@ -1,6 +1,15 @@
 
 getVideos(0, 3)
 
+/**
+ * This is a recursive function. It takes in a counter and the limit it counts to. 
+ * If it cannot parse the page and find a playlist, it will wait 1 second, them call
+ * itself again, increasing the count by one. If the limit is 
+ * reached as no playlist is found, a error message is displayed to the
+ * user.
+ * @param {Number} count - starts at 0
+ * @param {Number} limit - if count goes over this number, the function will stop calling itself
+ */
 async function getVideos(count, limit){
 
     let bodyHTML = await getBodyHTML()
@@ -32,6 +41,10 @@ async function getVideos(count, limit){
 }
 
 
+/**
+ * Main function
+ * @param {NodeList} videos - a NodeList of the video element in the playlist taken from the DOM
+ */
 async function main(videos){
 
 
@@ -72,7 +85,9 @@ async function main(videos){
 }
 
 
-
+/**
+ * @returns The HTML inside the body of the currenly active page.
+ */
 function getBodyHTML(){
 
     return chrome.tabs.query({ active: true, currentWindow: true }).then(function(tabs){
