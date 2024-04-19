@@ -2,7 +2,7 @@
 This browser extension allows you to see the total time it will take you to get through a YouTube playlist. It works on Edge, Chrome, and Firefox.
 
 ## Download:
-Get it from the Firefox add-on store [here](https://addons.mozilla.org/en-US/firefox/addon/how-long-is-this-playlist/).
+Get it from the Firefox add-on store [here](https://addons.mozilla.org/en-US/firefox/addon/how-long-is-this-playlist/). 
 Alternatively, clone this repo and follow browser-specific instructions to uploading.
 
 ## How it works:
