@@ -6,7 +6,7 @@ It sends a query to the Chrome API to get the HTML from the DOM of the currently
 
 ## Features:
 - Light and dark mode.
-- Displays a loading circle if videos are not immediately found.
+- Displays a loading circle and re-queries the page if videos are not immediately found.
   
 ![A screenshot of the extension](https://github.com/ecarnovsky/ecarnovsky/blob/main/images/playlist-extension.png)
 
