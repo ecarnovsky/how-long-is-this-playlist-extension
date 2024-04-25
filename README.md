@@ -1,5 +1,5 @@
 # How Long is This Playlist?
-This browser extension allows you to see the total time it will take you to get through a YouTube playlist. It works on Edge, Chrome, and Firefox.
+This browser extension allows you to see the total time it will take you to get through a YouTube playlist. It works on Edge, Chrome, and Firefox. I also made a webpage version that can be accessed [here](playlistlengthcalculator.netlify.app/).
 
 ## Download
 Get it from the Firefox add-on store [here](https://addons.mozilla.org/en-US/firefox/addon/how-long-is-this-playlist/). 
