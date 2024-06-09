@@ -6,7 +6,7 @@ Get it from the Firefox add-on store [here](https://addons.mozilla.org/en-US/fir
 Alternatively, clone this repo and follow browser-specific instructions to uploading.
 
 ## How it works
-It sends a query to the Chrome API to get the HTML from the DOM of the currently active tab. The HTML is then parsed for elements associated with playlist videos. Assuming videos are found, the time strings are then extracted and used to calculate the total playlist length. 
+The extension sends a query to the Chrome API to get the HTML from the DOM of the currently active tab. The HTML is then parsed for elements associated with playlist videos. Assuming videos are found, the time strings are then extracted and used to calculate the total playlist length. 
 
 ## Features
 - Light and dark mode.
